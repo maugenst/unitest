@@ -1,0 +1,19 @@
+{
+  "name": "unitest",
+  "version": "1.0.0",
+  "description": "Test driver for running automated UI tests for scs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maugenst/unitest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maugenst/unitest/issues"
+  },
+  "homepage": "https://github.com/maugenst/unitest#readme"
+}
