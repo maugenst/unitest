@@ -2,9 +2,13 @@
   "name": "unitest",
   "version": "1.0.0",
   "description": "Test driver for running automated UI tests for scs",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "watch": "tsc --watch",
+    "clean": "rimraf dist/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,18 @@
   "bugs": {
     "url": "https://github.com/maugenst/unitest/issues"
   },
-  "homepage": "https://github.com/maugenst/unitest#readme"
+  "homepage": "https://github.com/maugenst/unitest#readme",
+  "dependencies": {
+    "@types/minimist": "^1.2.0",
+    "@types/prompts": "^2.0.9",
+    "@types/puppeteer": "^3.0.2",
+    "jsonfile": "^6.0.1",
+    "minimist": "^1.2.5",
+    "prompts": "^2.4.0",
+    "puppeteer": "^5.4.0",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
